@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+label {font-family: Arial, Helvetica, sans-serif;
+color: burlywood} /* La manera de darle css a todas las etiquetas label es poniendo el nombre de la etiqueta (label) y entre llaves las propiedades css // asi le cambio todas las etiquetas de una */
+
+    </style>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <form action="procesa.php"
+    method="post">
+    <fieldset>
+        <legend>Datos Personales</legend>
+        <p>
+     <label for="nombre">Nombre:     <!-- le damos a lo que tiene al lado y se pone directamente para poder rellenar el formulario -->
+        <input id="nombre" type="text"
+        name="nombre"><br>
+    </p>
+    <p>
+        <label for="ape">Apellidos:
+        <input id="ape" type="text"
+        name="Apellidos"><br>
+    </p>
+    </fieldset>
+    <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
